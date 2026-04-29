@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xela Noticias – Quetzaltenango al Día</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+        <span class="logo-text">Xela<em>Noticias</em></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#quetzaltenango" class="nav-link"><i class="fas fa-city"></i> Quetzaltenango</a></li>
+        <li><a href="#farandula" class="nav-link"><i class="fas fa-star"></i> Farándula</a></li>
+        <li><a href="#deportes" class="nav-link"><i class="fas fa-futbol"></i> Deportes</a></li>
+        <li><a href="#capacitaciones" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Capacitaciones</a></li>
+        <li><a href="#opiniones" class="nav-link"><i class="fas fa-comments"></i> Opiniones</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content fade-in">
+      <span class="hero-badge"><i class="fas fa-broadcast-tower"></i> Noticias en Vivo</span>
+      <h1 class="hero-title">Tu Ventana al<br /><em>Corazón de Xela</em></h1>
+      <p class="hero-subtitle">Quetzaltenango, Guatemala — noticias locales, cultura, deportes y más.</p>
+      <div class="hero-actions">
+        <a href="#quetzaltenango" class="btn btn-primary"><i class="fas fa-newspaper"></i> Ver Noticias</a>
+        <a href="#opiniones" class="btn btn-glass"><i class="fas fa-pen"></i> Dejar Opinión</a>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <span class="ticker-label"><i class="fas fa-bolt"></i> ÚLTIMA HORA</span>
+      <div class="ticker-track">
+        <span>Feria de Quetzaltenango 2026 arranca el próximo fin de semana &nbsp;•&nbsp; Selección Nacional clasifica a siguiente ronda &nbsp;•&nbsp; Nuevo mercado municipal inaugurado en Xela &nbsp;•&nbsp; Festival de Marimba reúne a miles en el Parque Central &nbsp;•&nbsp; Lluvia de meteoros visible desde el altiplano guatemalteco &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== DESTACADAS SLIDER ===== -->
+  <section class="section-destacadas" id="destacadas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Destacado</span>
+        <h2>Noticias Principales</h2>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider" id="mainSlider">
+          <!-- Slides generados por JS -->
+        </div>
+        <button class="slider-btn prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== NOTICIAS QUETZALTENANGO ===== -->
+  <section class="section-news" id="quetzaltenango">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag"><i class="fas fa-map-marker-alt"></i> Local</span>
+        <h2>Noticias de Quetzaltenango</h2>
+        <button class="btn btn-primary btn-sm" id="openUploadModal">
+          <i class="fas fa-plus-circle"></i> Subir Noticia
+        </button>
+      </div>
+      <div class="news-grid" id="xelaGrid">
+        <!-- Cards generadas por JS -->
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== FARANDULA ===== -->
+  <section class="section-news alt-bg" id="farandula">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag"><i class="fas fa-star"></i> Nacional</span>
+        <h2>Farándula Guatemala</h2>
+      </div>
+      <div class="news-grid" id="farandulaGrid">
+        <!-- Cards generadas por JS -->
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== DEPORTES ===== -->
+  <section class="section-news" id="deportes">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag"><i class="fas fa-futbol"></i> Deportes</span>
+        <h2>Deportes Nacional e Internacional</h2>
+      </div>
+      <div class="news-grid" id="deportesGrid">
+        <!-- Cards generadas por JS -->
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== CAPACITACIONES ===== -->
+  <section class="section-news alt-bg" id="capacitaciones">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag"><i class="fas fa-chalkboard-teacher"></i> Inteligencia Artificial</span>
+        <h2>El Nuevo Paradigma en la Producción de Contenidos Periodísticos</h2>
+      </div>
+      <div class="capacitacion-article glass-card fade-in" id="capArticle">
+        <!-- Generado por JS -->
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== OPINIONES ===== -->
+  <section class="section-opiniones" id="opiniones">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag"><i class="fas fa-comments"></i> Comunidad</span>
+        <h2>Opiniones y Comentarios</h2>
+      </div>
+      <div class="opiniones-layout">
+        <div class="comment-form glass-card fade-in">
+          <h3><i class="fas fa-pen-to-square"></i> Deja tu Opinión</h3>
+          <input type="text" id="commentName" placeholder="Tu nombre" class="glass-input" maxlength="60" />
+          <textarea id="commentText" placeholder="Escribe tu comentario aquí..." class="glass-input" rows="4" maxlength="500"></textarea>
+          <div class="char-count"><span id="charCount">0</span>/500</div>
+          <button class="btn btn-primary" id="submitComment">
+            <i class="fas fa-paper-plane"></i> Publicar Comentario
+          </button>
+        </div>
+        <div class="comments-list" id="commentsList">
+          <!-- Comentarios desde LocalStorage -->
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+            <span class="logo-text">Xela<em>Noticias</em></span>
+          </div>
+          <p>Tu fuente de información confiable en Quetzaltenango, Guatemala.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quetzaltenango">Quetzaltenango</a></li>
+            <li><a href="#farandula">Farándula</a></li>
+            <li><a href="#deportes">Deportes</a></li>
+            <li><a href="#capacitaciones">Capacitaciones</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Contactos</h4>
+          <ul>
+            <li><a href="mailto:listzic@gmail.com"><i class="fas fa-envelope"></i> listzic@gmail.com</a></li>
+            <li><a href="mailto:garcía1Esdras@gmail.com"><i class="fas fa-envelope"></i> garcía1Esdras@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> +502 5844-7847</li>
+            <li><i class="fas fa-map-marker-alt"></i> Quetzaltenango, Guatemala</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <strong>Lisbeth Mishel Tzic Ixcaquic 2026</strong> — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- ===== MODAL DETALLE NOTICIA ===== -->
+  <div class="modal-overlay" id="newsModal">
+    <div class="modal-box glass-card news-modal-box">
+      <button class="modal-close" id="closeNewsModal"><i class="fas fa-times"></i></button>
+      <div id="newsModalContent"></div>
+    </div>
+  </div>
+ 
+  <!-- ===== MODAL SUBIR NOTICIA ===== -->
+  <div class="modal-overlay" id="uploadModal">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+      <h3><i class="fas fa-upload"></i> Subir Nueva Noticia</h3>
+      <select id="newSection" class="glass-input">
+        <option value="" disabled selected>¿En qué sección deseas publicar?</option>
+        <option value="quetzaltenango">🏙️ Quetzaltenango</option>
+        <option value="farandula">⭐ Farándula</option>
+        <option value="deportes">⚽ Deportes</option>
+      </select>
+      <input type="text" id="newTitle" placeholder="Título de la noticia" class="glass-input" maxlength="100" />
+      <textarea id="newDesc" placeholder="Descripción de la noticia..." class="glass-input" rows="4" maxlength="400"></textarea>
+      <label class="file-label">
+        <i class="fas fa-image"></i> Seleccionar Imagen
+        <input type="file" id="newImage" accept="image/*" />
+      </label>
+      <div id="imagePreview" class="image-preview"></div>
+      <button class="btn btn-primary" id="publishNews">
+        <i class="fas fa-check-circle"></i> Publicar Noticia
+      </button>
+    </div>
+  </div>
+ 
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
